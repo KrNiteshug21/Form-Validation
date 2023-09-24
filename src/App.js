@@ -147,15 +147,6 @@ function App() {
             Signup
           </button>
         </form>
-
-        {/* <p style={{ textAlign: "center" }}>Or</p>
-        <a href="#" className="loginWithFacebook">
-          <FaFacebook /> Login with Facebook
-        </a>
-        <a href="#" className="loginWithGoogle">
-          <FcGoogle />
-          Login with Google
-        </a> */}
       </section>
     </main>
   );
