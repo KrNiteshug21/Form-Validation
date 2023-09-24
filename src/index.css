@@ -1,13 +1,87 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --white-clr: #fffffe;
+
+  --dark-clr-100: #dde6ed;
+  --dark-clr-300: #9db2bf;
+  --dark-clr-500: #526d82;
+  --dark-clr-700: #27374d;
+
+  --maxWidth: min((100% - 3rem), 1200px);
+}
+
+.App {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: var(--dark-clr-100);
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--dark-clr-700);
+  color: var(--dark-clr-100);
+  min-width: 400px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.signinForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.signinForm input {
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+  border-bottom: 2px solid #333;
+}
+
+.eyeIcon2 {
+  position: absolute;
+  right: 0.75rem;
+  top: 12.5rem;
+  color: var(--dark-clr-700);
+  size: 64;
+  cursor: pointer;
+}
+
+.signupBtn {
+  background-color: var(--dark-clr-100);
+  color: var(--dark-clr-700);
+  padding-block: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.15rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.loginWithFacebook,
+.loginWithGoogle {
+  background-color: var(--dark-clr-100);
+  color: var(--dark-clr-700);
+  padding-block: 0.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  display: flex;
+  place-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
 }
